@@ -1,0 +1,145 @@
+.social_media_icons ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social_media_icons li {
+  margin: 10px;
+}
+
+.social_media_icons li a {
+  border: 1px solid var(--Very-Pale-Cyan);
+  border-radius: 50%;
+  color: var(--Very-Pale-Cyan);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  height: 40px;
+  width: 40px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.social_media_icons li a:hover {
+  color: hsl(176, 68%, 64%);
+  border: 1px solid hsl(176, 68%, 64%);
+}
+
+footer {
+  margin-top: -320px;
+  padding: 50px 16px 20px 16px;
+  background-color: var(--Very-Dark-Cyan);
+  z-index: 0;
+}
+
+footer .container {
+  max-width: 350px;
+}
+
+.contact-box {
+  display: flex;
+  max-width: 350px;
+  margin-top: 1rem;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: var(--Very-Pale-Cyan);
+}
+
+.contact-box img {
+  width: 15px;
+  height: 15px;
+  margin-top: 1.25rem;
+}
+
+.contact-box p {
+  margin-left: 1rem;
+  color: var(--Very-Pale-Cyan);
+}
+
+.footer-links ul li a {
+  color: var(--Very-Pale-Cyan);
+  font-size: 16px;
+  font-family: var(--ff-open-sans);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0rem;
+  justify-content: space-between;
+  height: 350px;
+}
+
+.footer-links ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    margin-top: -350px;
+    padding: 200px 16px 20px 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1100px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .copyright {
+    width: 100%;
+    text-align: end;
+    margin-left: 5rem;
+  }
+
+  footer .container a {
+    margin-bottom: 2rem;
+  }
+
+  .address-box {
+    margin-right: 1.5rem;
+  }
+
+  .footer-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    padding: 0;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 220px;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-box {
+    max-width: 320px;
+    margin-top: -15px;
+  }
+
+  .social_media_icons {
+    margin-top: -15px;
+  }
+}

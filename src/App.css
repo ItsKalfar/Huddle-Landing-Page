@@ -1,0 +1,152 @@
+:root {
+  --Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+  --Pink: hsl(322, 100%, 66%);
+
+  --ff-open-sans: "Open sans", sans-serif;
+  --ff-poppins: "Poppins", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  font-size: 18px;
+  font-family: var(--ff-open-sans);
+  margin: 1rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-poppins);
+  color: var(--Very-Dark-Cyan);
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  font-family: var(--ff-poppins);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 2rem;
+  font-size: 16px;
+  margin: 0;
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--Pink);
+
+  max-width: 300px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 0.75rem 2rem;
+}
+
+.btn-primary:hover {
+  opacity: 0.75;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  box-shadow: 0px 1px 4px 2px rgb(194, 193, 193);
+  width: 150px;
+}
+
+.btn-secondary:hover {
+  opacity: 0.75;
+  box-shadow: 0px 1px 8px 2px rgb(194, 193, 193);
+}
+
+#about .container {
+  padding-bottom: 8rem;
+}
+
+#contact .container form {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 0.75rem;
+  text-align: center;
+  padding: 3rem 1rem;
+  z-index: 10;
+  background-color: #fff;
+  box-shadow: 0px -1px 10px 1px rgb(214, 214, 214);
+}
+
+#contact {
+  position: relative;
+  top: -180px;
+}
+
+form h1 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+header {
+  background-color: var(--Very-Pale-Cyan);
+  background-image: url(./images/bg-hero-mobile.svg);
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 100% 88%;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    background-image: url(./images/bg-hero-desktop.svg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  form h1 {
+    font-size: 1.5rem;
+  }
+}
+
+footer a:hover {
+  border-bottom: 1px solid var(--Very-Pale-Cyan);
+}
